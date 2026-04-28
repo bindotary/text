@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7661756c74</title>
+    <style>
+        body { background-color: #2E3440; color: #D8DEE9; font-family: 'JetBrains Mono', monospace; padding: 40px; }
+        input {
+            background: #3B4252; color: #A3BE8C; border: 1px solid #4C566A;
+            padding: 8px; font-family: inherit; width: 300px; margin-top: 15px; outline: none;
+        }
+        input:invalid:not(:placeholder-shown) { border-color: #BF616A; }
+        .next-btn { display: none; margin-top: 20px; color: #EBCB8B; text-decoration: none; font-weight: bold; }
+        
+        /* Requires the exact decoded flag text */
+        input:valid ~ .next-btn { display: inline-block; }
+    </style>
+</head>
+<body>
+    <p>you made it.</p>
+    <p>type the decoded flag.</p>
+    
+    <div>
+        <input type="text" pattern="flag=go_to_7661756c74.html" placeholder="enter decoded flag..." required>
+        <a href="your_secret_page.html" class="next-btn">[+] ok now i trust you</a>
+    </div>
+</body>
+</html>
